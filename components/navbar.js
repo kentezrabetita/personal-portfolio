@@ -5,7 +5,7 @@ export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [theme, setTheme] = useState(false);
   return (
-    <nav className='p-6 md:p-10 md:px-40 text-md'>
+    <nav className='p-6 md:p-10 md:px-40 text-md dark:text-white'>
       <div className='flex flex-row items-center justify-between'>
         <div>
           <h1 className='md:text-lg'>
@@ -39,14 +39,14 @@ export default function Navbar() {
       </div>
       {showMenu && (
         <div className='md:hidden'>
-          <div className='fixed z-10 top-0 flex flex-col items-center self-end justify-center py-8 space-y-6 text-white bg-black h-[100vh] left-0 right-0'>
+          <div className='fixed z-10 top-0 flex bg-white flex-col items-center self-end justify-center py-8 space-y-6 dark:bg-neutral-900 text-black dark:text-white h-[100vh] left-0 right-0'>
             <Link href='/'>
               {theme ? (
                 <a className='p-2 px-6 text-black bg-white rounded-md'>
                   light mode.
                 </a>
               ) : (
-                <a className='p-2 px-6 text-black bg-white rounded-md'>
+                <a className='p-2 px-6 text-white bg-black rounded-md'>
                   dark mode.
                 </a>
               )}

@@ -12,12 +12,12 @@ export default function Hero() {
             alt='male web developer'
           />
         </div>
-        <div className='sm:text-right md:text-left'>
+        <div className='sm:text-right md:text-left dark:text-white'>
           <div>Hi, my name is Kent!</div>
           <div className='text-lg font-bold'>
             <h1>Full Stack Web Developer</h1>
           </div>
-          <div className='flex flex-row justify-center pt-4 space-x-6'>
+          <div className='flex flex-row justify-center pt-4 space-x-6 dark:text-black'>
             <div className='w-full'>
               <Link href='/contact'>
                 <a>

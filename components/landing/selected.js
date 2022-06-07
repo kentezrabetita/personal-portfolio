@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SelectedProjects() {
   return (
-    <div className='container flex flex-col mx-auto mt-6 text-center selected'>
+    <div className='container flex flex-col mx-auto mt-6 text-center selected dark:text-white'>
       <div className='text-2xl font-bold'>SELECTED PROJECTS</div>
       <div className='flex flex-col p-6 space-y-6'>
         <div className='flex flex-col p-6 space-y-4 text-left border rounded-lg shadow-md'>
@@ -16,7 +16,7 @@ export default function SelectedProjects() {
           <div>
             <div>Project Title</div>
             <div>Project Description</div>
-            <div className='flex flex-row items-center justify-center mt-4 space-x-4'>
+            <div className='flex flex-row items-center justify-center mt-4 space-x-4 dark:text-black'>
               <div className='w-full'>
                 <button className='w-full p-2 transition ease-in-out bg-green-300 rounded-lg active:scale-95'>
                   Source
@@ -41,7 +41,7 @@ export default function SelectedProjects() {
           <div>
             <div>Project Title</div>
             <div>Project Description</div>
-            <div className='flex flex-row items-center justify-center mt-4 space-x-4'>
+            <div className='flex flex-row items-center justify-center mt-4 space-x-4 dark:text-black'>
               <div className='w-full'>
                 <button className='w-full p-2 transition ease-in-out bg-green-300 rounded-lg active:scale-95'>
                   Source
@@ -66,7 +66,7 @@ export default function SelectedProjects() {
           <div>
             <div>Project Title</div>
             <div>Project Description</div>
-            <div className='flex flex-row items-center justify-center mt-4 space-x-4'>
+            <div className='flex flex-row items-center justify-center mt-4 space-x-4 dark:text-black'>
               <div className='w-full'>
                 <button className='w-full p-2 transition ease-in-out bg-green-300 rounded-lg active:scale-95'>
                   Source
