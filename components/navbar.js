@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
+  const [theme, setTheme] = useState(false);
   return (
     <nav className='p-6 md:p-10 md:px-40 text-md'>
       <div className='flex flex-row items-center justify-between'>
@@ -13,7 +14,7 @@ export default function Navbar() {
             </Link>
           </h1>
         </div>
-        <div className='hidden md:flex flex-row text-right space-x-20'>
+        <div className='flex-row hidden space-x-20 text-right md:flex'>
           <div>
             <Link href='/about'>
               <a>about.</a>
@@ -38,9 +39,17 @@ export default function Navbar() {
       </div>
       {showMenu && (
         <div className='md:hidden'>
-          <div className='absolute flex flex-col items-center h-96 justify-center self-end py-8 mt-10 space-y-6 bg-black rounded-xl text-white left-6 right-6'>
+          <div className='fixed z-10 top-0 flex flex-col items-center self-end justify-center py-8 space-y-6 text-white bg-black h-[100vh] left-0 right-0'>
             <Link href='/'>
-              <a>kent ezra.</a>
+              {theme ? (
+                <a className='p-2 px-6 text-black bg-white rounded-md'>
+                  light mode.
+                </a>
+              ) : (
+                <a className='p-2 px-6 text-black bg-white rounded-md'>
+                  dark mode.
+                </a>
+              )}
             </Link>
             <Link href='/about'>
               <a>about.</a>
@@ -51,6 +60,12 @@ export default function Navbar() {
             <Link href='/contact'>
               <a>contact.</a>
             </Link>
+            <div
+              className='cursor-pointer'
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              <a>close.</a>
+            </div>
           </div>
         </div>
       )}
