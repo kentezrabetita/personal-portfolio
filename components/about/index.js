@@ -3,11 +3,15 @@ import Link from 'next/link';
 
 export default function AboutComponent() {
   return (
-    <div className='container flex flex-col p-6 mx-auto space-y-4'>
-      <div>
-        <img src='/assets/img/kent-2.png' alt='male web developer' />
+    <div className='container flex flex-col p-6 mx-auto space-y-4 xl:flex-row-reverse'>
+      <div className='flex justify-center xl:w-full'>
+        <img
+          src='/assets/img/kent-2.png'
+          className='h-max w-max'
+          alt='male web developer'
+        />
       </div>
-      <div className='flex flex-col p-4 space-y-8'>
+      <div className='flex flex-col p-4 space-y-6 xl:w-full'>
         <div className='text-justify'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit
           amet nunc auctor, tristique diam eu, tempus eros. Vestibulum hendrerit
@@ -24,12 +28,12 @@ export default function AboutComponent() {
         </div>
         <div className='flex flex-col space-y-4'>
           <div>Few technologies I've work with : </div>
-          <div className='flex flex-col cursor-default'>
+          <div className='flex flex-col space-y-2 cursor-default'>
             <div className='flex flex-col'>
               <div>
                 Frontend<span className='text-lg text-orange-400'>.</span>
               </div>
-              <div className='flex flex-row flex-wrap p-4 text-justify'>
+              <div className='flex flex-row flex-wrap px-4 text-justify'>
                 <div className='p-1 m-1 text-white transition ease-in-out bg-orange-600 rounded-lg hover:scale-105'>
                   HTML
                 </div>
@@ -60,7 +64,7 @@ export default function AboutComponent() {
               <div>
                 Backend<span className='text-lg text-sky-400'>.</span>
               </div>
-              <div className='flex flex-row flex-wrap p-4 text-justify'>
+              <div className='flex flex-row flex-wrap px-4 text-justify'>
                 <div className='p-1 m-1 text-white transition ease-in-out bg-green-600 rounded-lg hover:scale-105'>
                   Node.js
                 </div>
@@ -82,7 +86,7 @@ export default function AboutComponent() {
               <div>
                 Tools<span className='text-lg text-red-600'>.</span>
               </div>
-              <div className='flex flex-row flex-wrap p-4 text-justify'>
+              <div className='flex flex-row flex-wrap px-4 text-justify'>
                 <div className='p-1 m-1 text-white transition ease-in-out bg-blue-600 rounded-lg hover:scale-105'>
                   VSCode
                 </div>
@@ -97,47 +101,47 @@ export default function AboutComponent() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className='flex flex-col'>
-            <div>
-              Links<span className='text-lg text-yellow-400'>.</span>
-            </div>
-            <div className='flex flex-row flex-wrap p-4 text-justify'>
-              <Link href='https://facebook.com/kentdagrit'>
-                <a target='_blank'>
-                  <button className='p-1 m-1 text-white transition ease-in-out bg-blue-600 rounded-lg hover:scale-105'>
-                    facebook
-                  </button>
-                </a>
-              </Link>
-              <Link href='https://www.linkedin.com/in/kent-ezra-betita-64355a212/'>
-                <a target='_blank'>
-                  <button className='p-1 m-1 text-white transition ease-in-out bg-blue-600 rounded-lg hover:scale-105'>
-                    linkedin
-                  </button>
-                </a>
-              </Link>
-              <Link href='https://github.com/kentezrabetita/'>
-                <a target='_blank'>
-                  <button className='p-1 m-1 text-white transition ease-in-out rounded-lg bg-zinc-700 hover:scale-105'>
-                    github
-                  </button>
-                </a>
-              </Link>
-              <Link href='https://dev.to/kentezrabetita'>
-                <a target='_blank'>
-                  <button className='p-1 m-1 text-white transition ease-in-out bg-gray-500 rounded-lg hover:scale-105'>
-                    dev.to
-                  </button>
-                </a>
-              </Link>
-              <Link href='https://www.instagram.com/kentezrathegreat/?hl=en'>
-                <a target='_blank'>
-                  <button className='p-1 m-1 text-white transition ease-in-out rounded-lg bg-gradient-to-r from-pink-500 to-orange-500 hover:scale-105'>
-                    instagram
-                  </button>
-                </a>
-              </Link>
+            <div className='flex flex-col'>
+              <div>
+                Links<span className='text-lg text-yellow-400'>.</span>
+              </div>
+              <div className='flex flex-row flex-wrap px-4 text-justify'>
+                <Link href='https://facebook.com/kentdagrit'>
+                  <a target='_blank'>
+                    <button className='p-1 m-1 text-white transition ease-in-out bg-blue-600 rounded-lg hover:scale-105'>
+                      facebook
+                    </button>
+                  </a>
+                </Link>
+                <Link href='https://www.linkedin.com/in/kent-ezra-betita-64355a212/'>
+                  <a target='_blank'>
+                    <button className='p-1 m-1 text-white transition ease-in-out bg-blue-600 rounded-lg hover:scale-105'>
+                      linkedin
+                    </button>
+                  </a>
+                </Link>
+                <Link href='https://github.com/kentezrabetita/'>
+                  <a target='_blank'>
+                    <button className='p-1 m-1 text-white transition ease-in-out rounded-lg bg-zinc-700 hover:scale-105'>
+                      github
+                    </button>
+                  </a>
+                </Link>
+                <Link href='https://dev.to/kentezrabetita'>
+                  <a target='_blank'>
+                    <button className='p-1 m-1 text-white transition ease-in-out bg-gray-500 rounded-lg hover:scale-105'>
+                      dev.to
+                    </button>
+                  </a>
+                </Link>
+                <Link href='https://www.instagram.com/kentezrathegreat/?hl=en'>
+                  <a target='_blank'>
+                    <button className='p-1 m-1 text-white transition ease-in-out rounded-lg bg-gradient-to-r from-pink-500 to-orange-500 hover:scale-105'>
+                      instagram
+                    </button>
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

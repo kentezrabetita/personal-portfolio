@@ -11,10 +11,10 @@ export default function Navbar() {
   if (!isMounted) return null;
 
   return (
-    <nav className='container p-6 mx-auto md:p-10 text-md dark:text-white lg:text-2xl'>
+    <nav className='container p-6 mx-auto md:p-10 text-md dark:text-white'>
       <div className='flex flex-row items-center justify-between'>
         <div>
-          <h1 className='md:text-lg lg:text-2xl'>
+          <h1 className='md:text-lg'>
             <Link href='/'>
               <a>kent ezra.</a>
             </Link>
