@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <div>
-      <div className='flex flex-col items-center justify-center p-6 text-center sm:flex-row-reverse md:justify-evenly sm:py-20'>
+      <div className='flex flex-col items-center justify-center p-6 text-center sm:flex-row-reverse md:justify-evenly sm:py-20 lg:h-[80vh] lg:py-0'>
         <div>
           <img
             src='/assets/img/kent-1.png'
@@ -12,9 +12,9 @@ export default function Hero() {
             alt='male web developer'
           />
         </div>
-        <div className='sm:text-right md:text-left dark:text-white'>
+        <div className='sm:text-right md:text-left dark:text-white lg:text-2xl'>
           <div>Hi, my name is Kent!</div>
-          <div className='text-lg font-bold'>
+          <div className='text-lg font-bold lg:text-3xl'>
             <h1>Full Stack Web Developer</h1>
           </div>
           <div className='flex flex-row justify-center pt-4 space-x-6 dark:text-black'>
