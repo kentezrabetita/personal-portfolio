@@ -11,7 +11,7 @@ export default function Footer() {
       <div>
         <Link href='/contact'>
           <a>
-            <button className='w-full p-2 transition ease-in-out bg-green-300 rounded-lg lg:w-96 dark:text-black active:scale-95'>
+            <button className='w-full p-2 transition ease-in-out bg-green-300 rounded-lg lg:text-2xl lg:w-96 dark:text-black active:scale-95'>
               Contact Me
             </button>
           </a>
