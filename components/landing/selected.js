@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SelectedProjects() {
   return (
-    <div className='container flex flex-col mx-auto mt-6 text-center selected dark:text-white'>
+    <div className='container flex flex-col mx-auto mt-12 text-center lg:space-y-6 selected dark:text-white'>
       <div className='text-2xl font-bold lg:text-4xl'>SELECTED PROJECTS</div>
       <div className='flex flex-col p-6 space-y-10'>
         <div className='flex flex-col p-6 space-y-4 text-left border border-black rounded-lg shadow-md dark:border-white lg:flex-row lg:justify-between lg:space-x-10 lg:space-y-0 lg:h-full'>
@@ -49,7 +49,7 @@ export default function SelectedProjects() {
         <div className='flex flex-col p-6 space-y-4 text-left border border-black rounded-lg shadow-md dark:border-white lg:flex-row-reverse lg:justify-between lg:space-x-reverse lg:space-x-10 lg:space-y-0 lg:h-full'>
           <div className='lg:w-full'>
             <img
-              className='rounded shadow-lg max-h-96 lg:h-96 max-w-96'
+              className='rounded shadow-lg max-h-96 max-w-96'
               src='https://www.madza.dev/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fzlsyc9paq6sa%2F2C8f1eij15fcMxoMxLYstT%2F08021e82b7d5a6c43d50d860c2db303c%2F1627637897_x.gif&w=640&q=75'
               alt=''
             />
