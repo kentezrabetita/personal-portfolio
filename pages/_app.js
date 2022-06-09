@@ -79,6 +79,30 @@ function MyApp({ Component, pageProps }) {
         <meta name='msapplication-TileColor' content='#ffffff' />
         <meta name='msapplication-TileImage' content='/ms-icon-144x144.png' />
         <meta name='theme-color' content='#ffffff' />
+
+        <meta name='author' content='Kent Ezra Betita' />
+        <meta name='title' content='Kent Ezra Betita' />
+        <meta
+          name='description'
+          content='Kent Ezra Betita is a self learning software and web developer through research and development.'
+        />
+        <meta
+          name='keywords'
+          content='kent ezra betita, full stack web developer, computer science student, caraga state university, full time, freelance, web developer, Web Animations, Machine Learning, AI, Security, Penetration Testing, Docker, Kubernetes, Blockchain, Cryptocurrency'
+        />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content='Kent Ezra Betita' />
+        <meta
+          property='og:description'
+          content='Kent Ezra Betita is a self learning software and web developer through research and development.'
+        />
+        <meta property='og:site_name' content='Kent Ezra Betita' />
+        <meta property='og:url' content='https://kentezrabetita.github.io' />
+        <meta name='twitter:title' content='Kent Ezra A. Betita' />
+        <meta
+          name='twitter:description'
+          content='Kent Ezra Betita is a self learning software and web developer through research and development.'
+        />
       </Head>
       <ThemeProvider enableSystem={false} attribute='class'>
         <Component {...pageProps} />
