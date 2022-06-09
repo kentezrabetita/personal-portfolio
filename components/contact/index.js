@@ -9,7 +9,7 @@ const notify = () => toast.success('Successfully Sent!');
 export default function ContactForm() {
   const form = useRef();
   const imgUrl = '/assets/img/kent-3.svg';
-  const prefix = process.env.NEXT_PUBLIC_BASE_BATH || '';
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   const sendEmail = async (e) => {
     e.preventDefault();
