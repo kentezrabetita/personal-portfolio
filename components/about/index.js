@@ -48,10 +48,10 @@ export default function AboutComponent() {
             .
           </p>
           <p>
-            I was never particularly great in school or in academics. I'm just a
-            generally curious individual. I spend a lot of time building
-            applications and learning something new, but there's a lot more to
-            it than that. Currently I've been working on full stack web
+            I was never particularly great in school or in academics. I&apos;m
+            just a generally curious individual. I spend a lot of time building
+            applications and learning something new, but there&apos;s a lot more
+            to it than that. Currently I&apos;ve been working on full stack web
             development both in my job and personal/school projects.
           </p>
           <p>
@@ -62,7 +62,7 @@ export default function AboutComponent() {
           </p>
         </div>
         <div className='flex flex-col space-y-4'>
-          <div>Few technologies I've work with : </div>
+          <div>Few technologies I&apos;ve work with : </div>
           <div className='flex flex-col space-y-2 cursor-default'>
             <div className='flex flex-col'>
               <div>

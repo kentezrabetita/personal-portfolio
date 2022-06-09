@@ -81,6 +81,7 @@ export default function ProjectGallery() {
               <img
                 className='h-56 transition ease-in-out rounded-lg hover:scale-105'
                 src={projectBackground[project.id - 1]}
+                alt='project gif'
               />
               <div>
                 <p className='text-2xl font-bold'>{project.company.name}</p>
