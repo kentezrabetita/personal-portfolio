@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
+  const imgUrl = '/assets/img/kent-1.svg';
+  const prefix = '/csu-hci-project';
   return (
     <div>
       <div className='container mx-auto flex flex-col items-center space-y-8 justify-center p-6 text-center sm:flex-row-reverse sm:space-x-reverse sm:space-x-8 sm:py-20 lg:h-[80vh] lg:py-0'>
@@ -18,7 +20,7 @@ export default function Hero() {
           }}
         >
           <img
-            src='/assets/img/kent-1.svg'
+            src={prefix + imgUrl}
             className='w-80 lg:w-3/4'
             alt='male web developer'
           />
