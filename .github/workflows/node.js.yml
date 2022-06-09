@@ -31,16 +31,16 @@ jobs:
         run: yarn run build
         env:
           NEXT_PUBLIC_BASE_PATH: /csu-hci-project
-          EMAIL_SERVICE_ID: ${{ secrets.EMAIL_SERVICE_ID }}
-          EMAIL_TEMPLATE_ID: ${{ secrets.EMAIL_TEMPLATE_ID }}
-          EMAIL_PUBLIC_KEY: ${{ secrets.EMAIL_PUBLIC_KEY }}
+          NEXT_PUBLIC_EMAIL_SERVICE_ID: ${{ secrets.EMAIL_SERVICE_ID }}
+          NEXT_PUBLIC_EMAIL_TEMPLATE_ID: ${{ secrets.EMAIL_TEMPLATE_ID }}
+          NEXT_PUBLIC_EMAIL_PUBLIC_KEY: ${{ secrets.EMAIL_PUBLIC_KEY }}
       - name: Exporting 🔃
         run: yarn run export
         env:
           NEXT_PUBLIC_BASE_PATH: /csu-hci-project
-          EMAIL_SERVICE_ID: ${{ secrets.EMAIL_SERVICE_ID }}
-          EMAIL_TEMPLATE_ID: ${{ secrets.EMAIL_TEMPLATE_ID }}
-          EMAIL_PUBLIC_KEY: ${{ secrets.EMAIL_PUBLIC_KEY }}
+          NEXT_PUBLIC_EMAIL_SERVICE_ID: ${{ secrets.EMAIL_SERVICE_ID }}
+          NEXT_PUBLIC_EMAIL_TEMPLATE_ID: ${{ secrets.EMAIL_TEMPLATE_ID }}
+          NEXT_PUBLIC_EMAIL_PUBLIC_KEY: ${{ secrets.EMAIL_PUBLIC_KEY }}
       - name: Jekyll ➕
         run: touch ./out/.nojekyll
 
