@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function AboutComponent() {
+  const imgUrl = '/assets/img/kent-2.svg';
+  const prefix = '/csu-hci-project';
+
   return (
     <div className='container flex flex-col p-6 mx-auto space-y-4 xl:flex-row-reverse xl:space-x-reverse xl:space-x-8 xl:space-y-0'>
       <motion.div
@@ -18,7 +21,7 @@ export default function AboutComponent() {
         className='flex items-center justify-center xl:w-full'
       >
         <img
-          src='/assets/img/kent-2.svg'
+          src={prefix + imgUrl}
           className='w-80 lg:w-3/4'
           alt='male web developer'
         />

@@ -8,6 +8,8 @@ const notify = () => toast.success('Successfully Sent!');
 
 export default function ContactForm() {
   const form = useRef();
+  const imgUrl = '/assets/img/kent-3.svg';
+  const prefix = '/csu-hci-project';
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -40,7 +42,7 @@ export default function ContactForm() {
         className='w-full'
       >
         <img
-          src='/assets/img/kent-3.svg'
+          src={prefix + imgUrl}
           alt='programming boy'
           className='p-6 transition ease-in-out min-w-md max-h-md active:scale-95 hover:scale-105'
         />
