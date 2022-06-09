@@ -7,7 +7,7 @@ export default function Hero() {
     <div>
       <div className='container mx-auto flex flex-col items-center space-y-8 justify-center p-6 text-center sm:flex-row-reverse sm:space-x-reverse sm:space-x-8 sm:py-20 lg:h-[80vh] lg:py-0'>
         <motion.div
-          className='lg:flex lg:justify-center'
+          className='flex justify-center w-full'
           initial={{ y: 250, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{
@@ -22,7 +22,7 @@ export default function Hero() {
             alt='male web developer'
           />
         </motion.div>
-        <div className='sm:text-right md:text-left dark:text-white lg:text-2xl'>
+        <div className='w-full sm:text-right md:text-left dark:text-white lg:text-xl'>
           <motion.div
             initial={{ y: 250, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -31,7 +31,7 @@ export default function Hero() {
             Hi, my name is Kent!
           </motion.div>
           <motion.div
-            className='text-lg font-bold lg:text-3xl'
+            className='text-lg'
             initial={{ y: 250, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
@@ -41,7 +41,10 @@ export default function Hero() {
               delay: 0.2,
             }}
           >
-            <h1>Full Stack Web Developer</h1>
+            <h1>
+              Self-learning software and web developer through research and
+              development.
+            </h1>
           </motion.div>
           <motion.div
             className='flex flex-row justify-center pt-4 space-x-6 dark:text-black'

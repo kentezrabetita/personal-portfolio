@@ -24,23 +24,23 @@ export default function SelectedProjects() {
               alt=''
             />
           </div>
-          <div className='w-full lg:text-2xl lg:flex lg:justify-between lg:flex-col'>
+          <div className='w-full lg:text-xl lg:flex lg:justify-between lg:flex-col'>
             <div>
               <div>Project Title</div>
               <div>Project Description</div>
             </div>
-            <div className='lg:flex lg:flex-col lg:space-y-1'>
-              <div className='lg:flex lg:flex-row lg:justify-center lg:w-full'>
-                <div className='lg:w-full'>Feature 1</div>
-                <div className='lg:w-full'>Feature 2</div>
+            <div className='flex flex-col lg:space-y-1'>
+              <div className='flex flex-row'>
+                <div className='w-full'>Feature 1</div>
+                <div className='w-full'>Feature 3</div>
               </div>
-              <div className='lg:flex lg:flex-row'>
-                <div className='lg:w-full'>Feature 1</div>
-                <div className='lg:w-full'>Feature 2</div>
+              <div className='flex flex-row'>
+                <div className='w-full'>Feature 1</div>
+                <div className='w-full'>Feature 2</div>
               </div>
-              <div className='lg:flex lg:flex-row'>
-                <div className='lg:w-full'>Feature 1</div>
-                <div className='lg:w-full'>Feature 2</div>
+              <div className='flex flex-row'>
+                <div className='w-full'>Feature 1</div>
+                <div className='w-full'>Feature 2</div>
               </div>
             </div>
             <div className='flex flex-row items-center justify-center mt-4 space-x-4 dark:text-black'>
@@ -65,23 +65,23 @@ export default function SelectedProjects() {
               alt=''
             />
           </div>
-          <div className='w-full lg:text-2xl lg:flex lg:justify-between lg:flex-col'>
+          <div className='w-full lg:text-xl lg:flex lg:justify-between lg:flex-col'>
             <div>
               <div>Project Title</div>
               <div>Project Description</div>
             </div>
             <div className='lg:flex lg:flex-col lg:space-y-1'>
-              <div className='lg:flex lg:flex-row lg:justify-center lg:w-full'>
-                <div className='lg:w-full'>Feature 1</div>
-                <div className='lg:w-full'>Feature 2</div>
+              <div className='flex flex-row'>
+                <div className='w-full'>Feature 1</div>
+                <div className='w-full'>Feature 2</div>
               </div>
-              <div className='lg:flex lg:flex-row'>
-                <div className='lg:w-full'>Feature 1</div>
-                <div className='lg:w-full'>Feature 2</div>
+              <div className='flex flex-row'>
+                <div className='w-full'>Feature 1</div>
+                <div className='w-full'>Feature 2</div>
               </div>
-              <div className='lg:flex lg:flex-row'>
-                <div className='lg:w-full'>Feature 1</div>
-                <div className='lg:w-full'>Feature 2</div>
+              <div className='flex flex-row'>
+                <div className='w-full'>Feature 1</div>
+                <div className='w-full'>Feature 2</div>
               </div>
             </div>
             <div className='flex flex-row items-center justify-center mt-4 space-x-4 dark:text-black'>
@@ -106,23 +106,23 @@ export default function SelectedProjects() {
               alt=''
             />
           </div>
-          <div className='w-full lg:text-2xl lg:flex lg:justify-between lg:flex-col'>
+          <div className='w-full lg:text-xl lg:flex lg:justify-between lg:flex-col'>
             <div>
               <div>Project Title</div>
               <div>Project Description</div>
             </div>
             <div className='lg:flex lg:flex-col lg:space-y-1'>
-              <div className='lg:flex lg:flex-row lg:justify-center lg:w-full'>
-                <div className='lg:w-full'>Feature 1</div>
-                <div className='lg:w-full'>Feature 2</div>
+              <div className='flex flex-row'>
+                <div className='w-full'>Feature 1</div>
+                <div className='w-full'>Feature 2</div>
               </div>
-              <div className='lg:flex lg:flex-row'>
-                <div className='lg:w-full'>Feature 1</div>
-                <div className='lg:w-full'>Feature 2</div>
+              <div className='flex flex-row'>
+                <div className='w-full'>Feature 1</div>
+                <div className='w-full'>Feature 2</div>
               </div>
-              <div className='lg:flex lg:flex-row'>
-                <div className='lg:w-full'>Feature 1</div>
-                <div className='lg:w-full'>Feature 2</div>
+              <div className='flex flex-row'>
+                <div className='w-full'>Feature 1</div>
+                <div className='w-full'>Feature 2</div>
               </div>
             </div>
             <div className='flex flex-row items-center justify-center mt-4 space-x-4 dark:text-black'>
