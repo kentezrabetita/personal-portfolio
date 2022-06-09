@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   const imgUrl = '/assets/img/kent-1.svg';
-  const prefix = '/csu-hci-project';
+  const prefix = process.env.NEXT_PUBLIC_BASE_BATH || '';
   return (
     <div>
       <div className='container mx-auto flex flex-col items-center space-y-8 justify-center p-6 text-center sm:flex-row-reverse sm:space-x-reverse sm:space-x-8 sm:py-20 lg:h-[80vh] lg:py-0'>

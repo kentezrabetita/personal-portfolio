@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function AboutComponent() {
   const imgUrl = '/assets/img/kent-2.svg';
-  const prefix = '/csu-hci-project';
+  const prefix = process.env.NEXT_PUBLIC_BASE_BATH || '';
 
   return (
     <div className='container flex flex-col p-6 mx-auto space-y-4 xl:flex-row-reverse xl:space-x-reverse xl:space-x-8 xl:space-y-0'>

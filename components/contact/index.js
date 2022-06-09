@@ -9,7 +9,7 @@ const notify = () => toast.success('Successfully Sent!');
 export default function ContactForm() {
   const form = useRef();
   const imgUrl = '/assets/img/kent-3.svg';
-  const prefix = '/csu-hci-project';
+  const prefix = process.env.NEXT_PUBLIC_BASE_BATH || '';
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ export default function ContactForm() {
         process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
         form.current,
-        process.env.EMAIL_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY
       );
       toast.success('Successfully Sent!');
     } catch (error) {
