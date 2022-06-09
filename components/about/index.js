@@ -54,14 +54,12 @@ export default function AboutComponent() {
             I was never particularly great in school or in academics. I&apos;m
             just a generally curious individual. I spend a lot of time building
             applications and learning something new, but there&apos;s a lot more
-            to it than that. Currently I&apos;ve been working on full stack web
-            development both in my job and personal/school projects.
+            to it than that.
           </p>
           <p>
-            In my spare time, I try to learn and teach myself things that
-            interest me and that includes Web Animations, Machine Learning/AI,
-            Security/Penetration Testing, Docker/Kubernetes, and the
-            Blockchain/Cryptocurrency.
+            Lastly, I also make sure that I have time for myself. I play
+            valorant and basketball, go out with my friends or family sometimes,
+            or just sleep.
           </p>
         </div>
         <div className='flex flex-col space-y-4'>
