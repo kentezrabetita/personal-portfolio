@@ -18,7 +18,7 @@ export default function AboutComponent() {
       >
         <img
           src='/assets/img/kent-2.svg'
-          className='h-max w-max'
+          className='w-80 lg:w-3/4'
           alt='male web developer'
         />
       </motion.div>
@@ -32,19 +32,33 @@ export default function AboutComponent() {
         }}
         className='flex flex-col p-4 space-y-6 xl:w-full'
       >
-        <div className='text-justify'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit
-          amet nunc auctor, tristique diam eu, tempus eros. Vestibulum hendrerit
-          velit sed metus commodo aliquam. Mauris a consectetur odio, a accumsan
-          turpis. Proin iaculis hendrerit justo. Nunc mollis ligula a orci
-          imperdiet faucibus. Donec vel sagittis sem, ac finibus elit. Etiam
-          hendrerit ligula id dolor convallis, mattis commodo lacus tincidunt.
-          Aliquam luctus magna a neque vulputate, sed malesuada lectus luctus.
-          Donec auctor leo nisl, at interdum metus bibendum at. Integer nec
-          magna et tortor tincidunt mollis. Ut sapien leo, aliquam a rutrum a,
-          dignissim in ante. Nullam sed purus a dolor pretium porttitor non nec
-          sem. Mauris vel eros ultricies leo faucibus ornare vitae nec diam.
-          Aenean sollicitudin malesuada sem, at vestibulum augue commodo in.
+        <div className='flex flex-col space-y-4 text-justify'>
+          <p>
+            My name is Kent Ezra Betita, an aspiring Full Stack Web Developer
+            from Philippines. Currently studying as an Undergraduate Computer
+            Science student at Caraga State University, Butuan City and working
+            remotely as a
+            <span className='font-bold'> Full Time Web Developer</span> at
+            <span className='px-2 ml-1 font-bold border rounded-lg cursor-pointer'>
+              <Link href='https://www.devspace.asia/'>
+                <a target='_blank'>DevSpace PH</a>
+              </Link>
+            </span>
+            .
+          </p>
+          <p>
+            I was never particularly great in school or in academics. I'm just a
+            generally curious individual. I spend a lot of time building
+            applications and learning something new, but there's a lot more to
+            it than that. Currently I've been working on full stack web
+            development both in my job and personal/school projects.
+          </p>
+          <p>
+            In my spare time, I try to learn and teach myself things that
+            interest me and that includes Web Animations, Machine Learning/AI,
+            Security/Penetration Testing, Docker/Kubernetes, and the
+            Blockchain/Cryptocurrency.
+          </p>
         </div>
         <div className='flex flex-col space-y-4'>
           <div>Few technologies I've work with : </div>
