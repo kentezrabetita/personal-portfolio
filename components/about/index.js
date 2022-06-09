@@ -1,17 +1,37 @@
 import React from 'react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function AboutComponent() {
   return (
-    <div className='container flex flex-col p-6 mx-auto space-y-4 xl:flex-row-reverse'>
-      <div className='flex justify-center xl:w-full'>
+    <div className='container flex flex-col p-6 mx-auto space-y-4 xl:flex-row-reverse xl:space-x-reverse xl:space-x-8 xl:space-y-0'>
+      <motion.div
+        initial={{ y: 250, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 1,
+          type: 'spring',
+          stiffness: 100,
+          delay: 0.2,
+        }}
+        className='flex items-center justify-center xl:w-full'
+      >
         <img
-          src='/assets/img/kent-2.png'
+          src='/assets/img/kent-2.svg'
           className='h-max w-max'
           alt='male web developer'
         />
-      </div>
-      <div className='flex flex-col p-4 space-y-6 xl:w-full'>
+      </motion.div>
+      <motion.div
+        initial={{ y: 250, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 1,
+          type: 'spring',
+          stiffness: 100,
+        }}
+        className='flex flex-col p-4 space-y-6 xl:w-full'
+      >
         <div className='text-justify'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit
           amet nunc auctor, tristique diam eu, tempus eros. Vestibulum hendrerit
@@ -145,7 +165,7 @@ export default function AboutComponent() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import Navbar from './navbar';
 
 export default function Layout({ children }) {
   return (
-    <div className='transition lg:h-fit'>
+    <div className='transition'>
       <Navbar />
       {children}
     </div>

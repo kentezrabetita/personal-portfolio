@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { motion } from 'framer-motion';
 
 export default function ProjectGallery() {
   const [projects, setProjects] = useState([]);
@@ -30,7 +31,15 @@ export default function ProjectGallery() {
 
   return (
     <div className='container flex flex-col p-6 mx-auto space-y-8 lg:px-36'>
-      <div>
+      <motion.div
+        initial={{ y: 250, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 1,
+          type: 'spring',
+          stiffness: 100,
+        }}
+      >
         <input
           className='w-full p-2 border rounded-lg'
           type='text'
@@ -38,8 +47,18 @@ export default function ProjectGallery() {
           placeholder='Search projects...'
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-      </div>
-      <div className='flex flex-col space-y-4 lg:flex-row md:grid md:grid-cols-2 xl:grid-cols-3 md:space-y-0 md:gap-8'>
+      </motion.div>
+      <motion.div
+        initial={{ y: 250, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 1,
+          type: 'spring',
+          stiffness: 100,
+          delay: 0.2,
+        }}
+        className='flex flex-col space-y-4 lg:flex-row md:grid md:grid-cols-2 xl:grid-cols-3 md:space-y-0 md:gap-8'
+      >
         {projects
           .filter((value) => {
             if (searchTerm === '') {
@@ -59,7 +78,7 @@ export default function ProjectGallery() {
               key={project.id}
             >
               <img
-                className='rounded-lg'
+                className='h-56 transition ease-in-out rounded-lg hover:scale-105'
                 src={projectBackground[project.id - 1]}
               />
               <div>
@@ -68,7 +87,7 @@ export default function ProjectGallery() {
               </div>
             </div>
           ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

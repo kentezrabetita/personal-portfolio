@@ -1,27 +1,63 @@
 import React from 'react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
     <div>
-      <div className='flex flex-col items-center justify-center p-6 text-center sm:flex-row-reverse md:justify-evenly sm:py-20 lg:h-[80vh] lg:py-0'>
-        <div>
+      <div className='container mx-auto flex flex-col items-center space-y-8 justify-center p-6 text-center sm:flex-row-reverse sm:space-x-reverse sm:space-x-8 sm:py-20 lg:h-[80vh] lg:py-0'>
+        <motion.div
+          className='lg:flex lg:justify-center'
+          initial={{ y: 250, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 1,
+            type: 'spring',
+            stiffness: 100,
+          }}
+        >
           <img
-            src='/assets/img/kent-1.png'
-            className='w-80'
+            src='/assets/img/kent-1.svg'
+            className='w-80 lg:w-3/4'
             alt='male web developer'
           />
-        </div>
+        </motion.div>
         <div className='sm:text-right md:text-left dark:text-white lg:text-2xl'>
-          <div>Hi, my name is Kent!</div>
-          <div className='text-lg font-bold lg:text-3xl'>
+          <motion.div
+            initial={{ y: 250, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, type: 'spring', stiffness: 100 }}
+          >
+            Hi, my name is Kent!
+          </motion.div>
+          <motion.div
+            className='text-lg font-bold lg:text-3xl'
+            initial={{ y: 250, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 1,
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.2,
+            }}
+          >
             <h1>Full Stack Web Developer</h1>
-          </div>
-          <div className='flex flex-row justify-center pt-4 space-x-6 dark:text-black'>
+          </motion.div>
+          <motion.div
+            className='flex flex-row justify-center pt-4 space-x-6 dark:text-black'
+            initial={{ y: 250, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 1,
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.4,
+            }}
+          >
             <div className='w-full'>
               <Link href='/contact'>
                 <a>
-                  <button className='w-full p-2 transition ease-in-out bg-green-300 rounded-lg hover:scale-105 active:scale-100'>
+                  <button className='w-full p-2 transition ease-in-out rounded-lg bg-main hover:scale-105 active:scale-100'>
                     Hire me!
                   </button>
                 </a>
@@ -30,13 +66,13 @@ export default function Hero() {
             <div className='w-full'>
               <Link href='/projects'>
                 <a>
-                  <button className='w-full p-2 transition ease-in-out bg-blue-300 rounded-lg hover:scale-105 active:scale-100'>
+                  <button className='w-full p-2 transition ease-in-out rounded-lg bg-secondary hover:scale-105 active:scale-100'>
                     Projects
                   </button>
                 </a>
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
