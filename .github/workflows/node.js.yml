@@ -29,10 +29,12 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Building ⚒️
         run: yarn run build
-          env: NEXT_PUBLIC_BASE_PATH: /csu-hci-project
+        env:
+            NEXT_PUBLIC_BASE_PATH: /csu-hci-project
       - name: Exporting 🔃
         run: yarn run export
-          env: NEXT_PUBLIC_BASE_PATH: /csu-hci-project
+        env:
+          NEXT_PUBLIC_BASE_PATH: /csu-hci-project
       - name: Jekyll ➕
         run: touch ./out/.nojekyll
 
