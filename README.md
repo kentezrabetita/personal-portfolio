@@ -1,6 +1,8 @@
 ## hci-final-project
 
-The goal is to design and create a prototype and convert it to code using React.js.
+This project serves as a requirement for my Human Computer Interaction class. The goal is to design and create a prototype of my personal portfolio and convert it to code using React.js.
+
+Link: https://kentezrabetita.vercel.app/
 
 ### Features
 
