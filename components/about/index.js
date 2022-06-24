@@ -38,17 +38,9 @@ export default function AboutComponent() {
       >
         <div className='flex flex-col space-y-4 text-justify'>
           <p>
-            My name is Kent Ezra Betita, an aspiring Full Stack Web Developer
-            from Philippines. Currently studying as an Undergraduate Computer
-            Science student at Caraga State University, Butuan City and working
-            remotely as a
-            <span className='font-bold'> Full Time Web Developer</span> at
-            <span className='px-2 ml-1 font-bold border rounded-lg cursor-pointer'>
-              <Link href='https://www.devspace.asia/'>
-                <a target='_blank'>DevSpace PH</a>
-              </Link>
-            </span>
-            .
+            My name is Kent Ezra Betita, a Software Engineer from Philippines.
+            Currently studying as an Undergraduate Computer Science student at
+            Caraga State University, Butuan City.
           </p>
           <p>
             I was never particularly great in school or in academics. I&apos;m

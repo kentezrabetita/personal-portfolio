@@ -31,7 +31,7 @@ export default function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, type: 'spring', stiffness: 100 }}
           >
-            Hi, my name is Kent!
+            Hello there, my name is Kent!
           </motion.div>
           <motion.div
             className='text-lg'
@@ -45,8 +45,7 @@ export default function Hero() {
             }}
           >
             <h1>
-              Self-learning software and web developer through research and
-              development.
+              Self-learning software developer through research and development.
             </h1>
           </motion.div>
           <motion.div
