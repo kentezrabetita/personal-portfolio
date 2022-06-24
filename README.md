@@ -2,8 +2,6 @@
 
 The goal is to design and create a prototype and convert it to code using React.js.
 
-Link: https://kentezrabetita.github.io/csu-hci-project
-
 ### Features
 
 - landing page
