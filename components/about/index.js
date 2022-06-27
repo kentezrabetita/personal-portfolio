@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function AboutComponent() {
   const imgUrl = '/assets/img/kent-2.svg';
@@ -20,10 +21,13 @@ export default function AboutComponent() {
         }}
         className='flex items-center justify-center xl:w-full'
       >
-        <img
+        <Image
           src={prefix + imgUrl}
           className='w-80 lg:w-3/4'
           alt='male web developer'
+          width={500}
+          height={500}
+          priority
         />
       </motion.div>
       <motion.div

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function ProjectGallery() {
   const [projects, setProjects] = useState([]);
@@ -75,13 +76,16 @@ export default function ProjectGallery() {
           })
           .map((project) => (
             <div
-              className='flex flex-col space-y-2 text-center border rounded-lg dark:border-none'
+              className='flex flex-col space-y-2 overflow-hidden text-center border rounded-lg dark:border-none'
               key={project.id}
             >
-              <img
+              <Image
                 className='h-56 transition ease-in-out rounded-lg hover:scale-105'
                 src={projectBackground[project.id - 1]}
-                alt='project gif'
+                alt='project showcase gif'
+                width={700}
+                height={400}
+                priority
               />
               <div>
                 <p className='text-2xl font-bold'>{project.company.name}</p>

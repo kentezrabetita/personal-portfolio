@@ -3,8 +3,7 @@ import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
-
-const notify = () => toast.success('Successfully Sent!');
+import Image from 'next/image';
 
 export default function ContactForm() {
   const form = useRef();
@@ -41,10 +40,13 @@ export default function ContactForm() {
         }}
         className='w-full'
       >
-        <img
+        <Image
           src={prefix + imgUrl}
-          alt='programming boy'
-          className='p-6 transition ease-in-out min-w-md max-h-md active:scale-95 hover:scale-105'
+          className='p-6 min-w-md max-h-md'
+          alt='mailbox'
+          width={600}
+          height={400}
+          priority
         />
       </motion.div>
       <motion.div
