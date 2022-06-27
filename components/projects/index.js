@@ -76,11 +76,11 @@ export default function ProjectGallery() {
           })
           .map((project) => (
             <div
-              className='flex flex-col space-y-2 overflow-hidden text-center border rounded-lg dark:border-none'
+              className='flex flex-col space-y-2 overflow-hidden text-center transition ease-in-out border hover:scale-105 dark:border-none'
               key={project.id}
             >
               <Image
-                className='h-56 transition ease-in-out rounded-lg hover:scale-105'
+                className='h-56 rounded-lg'
                 src={projectBackground[project.id - 1]}
                 alt='project showcase gif'
                 width={700}
