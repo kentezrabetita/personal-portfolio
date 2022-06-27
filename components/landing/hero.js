@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Hero() {
   const imgUrl = '/assets/img/kent-1.svg';
@@ -19,10 +19,13 @@ export default function Hero() {
             stiffness: 100,
           }}
         >
-          <img
+          <Image
             src={prefix + imgUrl}
             className='w-80 lg:w-3/4'
             alt='male web developer'
+            width={500}
+            height={500}
+            priority
           />
         </motion.div>
         <div className='w-full sm:text-right md:text-left dark:text-white lg:text-xl'>
