@@ -29,7 +29,7 @@ export default function ContactForm() {
 
   return (
     <div className='container flex flex-col p-6 mx-auto space-y-6 lg:flex-row lg:space-y-0 lg:space-x-4 lg:h-[88vh] lg:items-center'>
-      <Toaster />
+      <Toaster position='bottom-right' reverseOrder={false} />
       <motion.div
         initial={{ y: 250, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
