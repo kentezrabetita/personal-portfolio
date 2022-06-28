@@ -61,9 +61,6 @@ export default function ContactForm() {
         className='w-full'
       >
         <form ref={form} onSubmit={sendEmail}>
-          {process.env.REACT_APP_EMAIL_TEMPLATE_ID}
-          {process.env.REACT_APP_EMAIL_SERVICE_ID}
-          {process.env.REACT_APP_EMAIL_PUBLIC_KEY}
           <div className='flex flex-col p-6 space-y-4'>
             <div>
               <input
