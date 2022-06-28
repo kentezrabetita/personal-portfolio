@@ -20,6 +20,7 @@ export default function ContactForm() {
         form.current,
         process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY
       );
+      form.current.reset();
       toast.success('Successfully Sent!');
     } catch (error) {
       toast.error('There was an error!');
