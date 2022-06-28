@@ -3,7 +3,6 @@ import { ThemeProvider } from 'next-themes';
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
-  const prefix = '/personal-portfolio';
   return (
     <>
       <Head>
@@ -77,7 +76,7 @@ function MyApp({ Component, pageProps }) {
           href='/favicon-16x16.png'
         />
         <link rel='manifest' href='/manifest.json' />
-        <link rel='shortcut icon' href={prefix + '/favicon.ico'} />
+        <link rel='shortcut icon' href={'favicon.ico'} />
         <meta name='msapplication-TileColor' content='#ffffff' />
         <meta name='msapplication-TileImage' content='/ms-icon-144x144.png' />
         <meta name='theme-color' content='#ffffff' />
