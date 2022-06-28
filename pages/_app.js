@@ -3,7 +3,7 @@ import { ThemeProvider } from 'next-themes';
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
-  const prefix = '/csu-hci-project';
+  const prefix = '/personal-portfolio';
   return (
     <>
       <Head>
