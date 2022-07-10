@@ -20,6 +20,13 @@ Link: https://kentezrabetita.vercel.app/
 - nextjs
 - tailwindcss
 
+### To do
+- add projects
+- project details page
+- progress bar
+- animations
+- image optimizations
+
 ### Notes
 
 The project GIFs used are only borrowed, and the project titles and descriptions are from a fake REST API service. Personal projects will be added soon in the future.
